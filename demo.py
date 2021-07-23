@@ -10,7 +10,7 @@ db = Connection(
 sql = 'select * from test_table where id=%s'
 data = db.get(sql, 2)
 
-# 获取多天记录
+# 获取多条记录
 sql = 'select * from test_table where id>%s'
 data = db.query(sql, 2)
 
